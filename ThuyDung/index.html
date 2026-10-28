@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#040b10">
+  <meta name="description" content="Portfolio của Đặng Ngọc Thùy Dung - sinh viên năm 3 Công nghệ thông tin (UTH), định hướng An ninh mạng.">
+  <meta name="author" content="Đặng Ngọc Thùy Dung">
+  <title>Đặng Ngọc Thùy Dung | Portfolio An ninh mạng</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;800;900&family=Chakra+Petch:wght@500;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Bỏ qua, đến nội dung chính</a>
+  <div class="progress" id="progress" aria-hidden="true"></div>
+
+  <div class="layout">
+
+    <!-- ===== HEADER / NAVBAR: thanh bên trái (desktop), thanh trên (mobile) ===== -->
+    <header class="sidebar" id="site-header">
+      <div class="side-top">
+        <a href="#home" class="brand" aria-label="Về đầu trang">
+          <img src="images/logo.svg" alt="" width="38" height="38">
+          <span><strong>Thùy Dung</strong><small>CNTT · UTH</small></span>
+        </a>
+        <div class="side-tools-mobile">
+          <button class="btn-mini theme-toggle" type="button" data-theme-toggle aria-label="Đổi tông neon xanh / tím" aria-pressed="false">◐</button>
+          <button class="btn-mini menu-toggle" id="menu-toggle" type="button" aria-label="Mở menu điều hướng" aria-expanded="false" aria-controls="navbar">Menu</button>
+        </div>
+      </div>
+
+      <nav class="navbar" id="navbar" aria-label="Điều hướng chính">
+        <ol class="nav-links">
+          <li><a class="nav-link" href="#home"><b>01</b>Trang chủ</a></li>
+          <li><a class="nav-link" href="#about"><b>02</b>Giới thiệu</a></li>
+          <li><a class="nav-link" href="#goals"><b>03</b>Mục tiêu</a></li>
+          <li><a class="nav-link" href="#skills"><b>04</b>Kỹ năng</a></li>
+          <li><a class="nav-link" href="#education"><b>05</b>Học vấn</a></li>
+          <li><a class="nav-link" href="#projects"><b>06</b>Dự án</a></li>
+          <li><a class="nav-link" href="#certificates"><b>07</b>Chứng chỉ</a></li>
+          <li><a class="nav-link" href="#contact"><b>08</b>Liên hệ</a></li>
+        </ol>
+      </nav>
+
+      <div class="side-bottom">
+        <button class="btn-switch" type="button" data-theme-toggle aria-pressed="false">
+          <span class="switch-track"><i></i></span><span class="switch-label">Neon tím</span>
+        </button>
+        <p class="side-status"><span class="dot" aria-hidden="true"></span>Đang mở cơ hội thực tập</p>
+      </div>
+    </header>
+
+    <main id="main">
+
+      <!-- ===== BANNER / HERO ===== -->
+      <section class="hero" id="home" aria-labelledby="hero-title">
+        <div class="hero-grid">
+          <div class="hero-text">
+            <p class="sticker tilt-l mono">Portfolio 2026</p>
+            <h1 class="hero-title" id="hero-title">
+              <span class="line-small">Đặng Ngọc</span>
+              <span class="line-big"><span class="hl">Thùy</span> Dung</span>
+            </h1>
+            <p class="hero-role"><span class="mono">&rarr;</span> <span id="typed" data-roles="Sinh viên Công nghệ thông tin|Định hướng An ninh mạng|Python · SQL · Web">Sinh viên Công nghệ thông tin</span><span class="caret" aria-hidden="true"></span></p>
+            <p class="hero-desc">Sinh viên năm 3 ngành Công nghệ thông tin tại UTH. Tôi dùng lập trình và dữ liệu để biến ý tưởng thành sản phẩm thực tế, đang theo đuổi hướng bảo mật thông tin.</p>
+            <div class="hero-actions">
+              <a href="#projects" class="btn btn-yellow">Xem dự án &darr;</a>
+              <a href="#contact" class="btn btn-white">Liên hệ tôi</a>
+            </div>
+          </div>
+
+          <figure class="polaroid">
+            <div class="polaroid-photo"><img src="images/avatar.jpg" alt="Ảnh chân dung Đặng Ngọc Thùy Dung" width="720" height="900"></div>
+            <figcaption class="mono">Dung · năm 3 · UTH</figcaption>
+            <svg class="badge" viewBox="0 0 120 120" role="img" aria-label="An ninh mạng, sinh viên UTH">
+              <defs><path id="circle-path" d="M60,60 m-44,0 a44,44 0 1,1 88,0 a44,44 0 1,1 -88,0"/></defs>
+              <circle cx="60" cy="60" r="58" class="badge-bg"/>
+              <text class="badge-text"><textPath href="#circle-path" textLength="268" lengthAdjust="spacing">AN NINH MẠNG • SINH VIÊN UTH • </textPath></text>
+              <path d="M60 44 74 50v10c0 8-6 13-14 16-8-3-14-8-14-16V50z" class="badge-shield"/>
+            </svg>
+          </figure>
+        </div>
+
+        <ul class="hero-stats">
+          <li class="stat c-yellow"><strong data-count="3">0</strong><span>Dự án</span></li>
+          <li class="stat c-pink"><strong data-count="5">0</strong><span>Kỹ năng kỹ thuật</span></li>
+          <li class="stat c-blue"><strong data-count="3">0</strong><span>Năm học</span></li>
+        </ul>
+
+        <div class="marquee" aria-hidden="true">
+          <div class="marquee-track mono">
+            <span>PYTHON ✦ SQL ✦ HTML ✦ CSS ✦ JAVASCRIPT ✦ AES-256 ✦ AN NINH MẠNG ✦ </span>
+            <span>PYTHON ✦ SQL ✦ HTML ✦ CSS ✦ JAVASCRIPT ✦ AES-256 ✦ AN NINH MẠNG ✦ </span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== GIỚI THIỆU: BENTO ===== -->
+      <section class="section about" id="about" aria-labelledby="about-title">
+        <header class="section-head">
+          <span class="num">02</span>
+          <h2 class="section-title" id="about-title">Giới thiệu <span class="hl">bản thân</span></h2>
+        </header>
+
+        <div class="bento">
+          <article class="tile tile-bio c-white reveal">
+            <h3>Xin chào, mình là Thùy Dung</h3>
+            <p>Tôi là sinh viên năm ba ngành Công nghệ thông tin tại UTH, định hướng theo an ninh mạng. Tôi thích tự học, tìm cách giải quyết vấn đề và có trách nhiệm với việc mình làm. Các dự án của tôi tập trung vào trực quan hóa thuật toán sắp xếp bằng Python và Pygame, quản lý chi tiêu cá nhân bằng SQL và xây dựng ứng dụng mã hóa, giải mã tệp tin bằng AES-256.</p>
+          </article>
+
+          <article class="tile tile-info c-yellow reveal">
+            <h3 class="mono">Thông tin nhanh</h3>
+            <dl class="info-list">
+              <div><dt>Họ tên</dt><dd>Đặng Ngọc Thùy Dung</dd></div>
+              <div><dt>Ngành học</dt><dd>Công nghệ thông tin</dd></div>
+              <div><dt>Trường</dt><dd>Đại học Giao thông vận tải TP. Hồ Chí Minh (UTH)</dd></div>
+              <div><dt>Hiện tại</dt><dd>Sinh viên năm 3</dd></div>
+              <div><dt>Định hướng</dt><dd>An ninh mạng</dd></div>
+            </dl>
+          </article>
+
+          <article class="tile tile-year c-pink reveal">
+            <p class="big-num">Y3</p>
+            <p>Sinh viên năm ba<br>ngành CNTT</p>
+          </article>
+
+          <article class="tile tile-hobby c-white reveal">
+            <h3 class="mono">Ngoài giờ học</h3>
+            <ul class="sticker-list">
+              <li class="c-blue">Nghe nhạc</li>
+              <li class="c-mint">Chơi game</li>
+              <li class="c-yellow">Cà phê cùng bạn bè</li>
+            </ul>
+          </article>
+
+          <article class="tile tile-place c-mint reveal">
+            <h3 class="mono">Địa điểm</h3>
+            <p class="place">TP. Hồ Chí Minh, Việt Nam</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- ===== MỤC TIÊU: ACCORDION ===== -->
+      <section class="section goals" id="goals" aria-labelledby="goals-title">
+        <header class="section-head">
+          <span class="num">03</span>
+          <h2 class="section-title" id="goals-title">Mục tiêu <span class="hl">nghề nghiệp</span></h2>
+        </header>
+        <p class="section-sub">Đi từng bước: học chắc nền tảng, làm dự án thực tế, rồi có công việc ổn định. Bấm vào từng bước để mở.</p>
+
+        <div class="accordion" id="goals-accordion">
+          <details class="acc-item c-yellow reveal" open>
+            <summary><span class="acc-no mono">01</span><span class="acc-title">Mục tiêu học tập hiện tại</span><span class="acc-icon" aria-hidden="true">+</span></summary>
+            <p>Hoàn thành tốt chương trình năm ba, củng cố nền tảng C++, Python, SQL và các kiến thức cần cho An ninh mạng.</p>
+          </details>
+          <details class="acc-item c-pink reveal">
+            <summary><span class="acc-no mono">02</span><span class="acc-title">Kỹ năng muốn phát triển</span><span class="acc-icon" aria-hidden="true">+</span></summary>
+            <p>Cải thiện nhiều kỹ năng trong lĩnh vực An ninh mạng và làm các dự án gần với thực tế hơn.</p>
+          </details>
+          <details class="acc-item c-blue reveal">
+            <summary><span class="acc-no mono">03</span><span class="acc-title">Định hướng tương lai</span><span class="acc-icon" aria-hidden="true">+</span></summary>
+            <p>Dự định học TOEIC và tìm kiếm cơ hội việc làm ổn định sau khi tốt nghiệp.</p>
+          </details>
+        </div>
+      </section>
+
+      <!-- ===== KỸ NĂNG: VÒNG TRÒN ===== -->
+      <section class="section skills" id="skills" aria-labelledby="skills-title">
+        <header class="section-head">
+          <span class="num">04</span>
+          <h2 class="section-title" id="skills-title">Kỹ năng <span class="hl">của tôi</span></h2>
+        </header>
+        <p class="section-sub">Mức độ là phần tự đánh giá ở thời điểm hiện tại.</p>
+
+        <div class="tabs" role="group" aria-label="Lọc kỹ năng" data-filter-group="skills">
+          <button class="tab is-active" type="button" data-filter="all" aria-pressed="true">Tất cả</button>
+          <button class="tab" type="button" data-filter="code" aria-pressed="false">Lập trình</button>
+          <button class="tab" type="button" data-filter="data" aria-pressed="false">Cơ sở dữ liệu</button>
+          <button class="tab" type="button" data-filter="web" aria-pressed="false">Web</button>
+        </div>
+
+        <ul class="gauges" id="skills-grid">
+          <li class="gauge-card reveal" data-category="data">
+            <div class="gauge c-pink" style="--level:80" role="img" aria-label="SQL 80%"><span class="mono">80%</span></div>
+            <h3>SQL</h3>
+          </li>
+          <li class="gauge-card reveal" data-category="code">
+            <div class="gauge c-yellow" style="--level:80" role="img" aria-label="Python 80%"><span class="mono">80%</span></div>
+            <h3>Python</h3>
+          </li>
+          <li class="gauge-card reveal" data-category="web">
+            <div class="gauge c-blue" style="--level:70" role="img" aria-label="HTML 70%"><span class="mono">70%</span></div>
+            <h3>HTML</h3>
+          </li>
+          <li class="gauge-card reveal" data-category="web">
+            <div class="gauge c-mint" style="--level:60" role="img" aria-label="CSS 60%"><span class="mono">60%</span></div>
+            <h3>CSS</h3>
+          </li>
+          <li class="gauge-card reveal" data-category="web code">
+            <div class="gauge c-pink" style="--level:40" role="img" aria-label="JavaScript 40%"><span class="mono">40%</span></div>
+            <h3>JavaScript</h3>
+          </li>
+        </ul>
+
+        <ul class="sticker-list soft" aria-label="Kỹ năng mềm">
+          <li class="c-white tilt-l">Tự học</li>
+          <li class="c-white tilt-r">Giải quyết vấn đề</li>
+          <li class="c-white tilt-l">Có trách nhiệm</li>
+        </ul>
+      </section>
+
+      <!-- ===== HỌC VẤN / HOẠT ĐỘNG ===== -->
+      <section class="section education" id="education" aria-labelledby="edu-title">
+        <header class="section-head">
+          <span class="num">05</span>
+          <h2 class="section-title" id="edu-title">Học vấn &amp; <span class="hl">hoạt động</span></h2>
+        </header>
+
+        <div class="edu-grid">
+          <article class="idcard reveal">
+            <div class="idcard-top mono"><span>HỒ SƠ HỌC TẬP</span><span>2026</span></div>
+            <div class="idcard-body">
+              <img src="images/avatar.jpg" alt="Ảnh Đặng Ngọc Thùy Dung" width="720" height="900" loading="lazy">
+              <div>
+                <h3>Đặng Ngọc Thùy Dung</h3>
+                <p class="mono">Công nghệ thông tin · Năm 3</p>
+                <p class="school">Đại học Giao thông vận tải TP. Hồ Chí Minh (UTH)</p>
+              </div>
+            </div>
+            <p class="idcard-text">Tập trung xây dựng kiến thức nền tảng về Công nghệ thông tin, định hướng chuyên sâu về An ninh mạng. Vận dụng kiến thức qua các dự án trực quan hóa thuật toán bằng Python, quản lý chi tiêu cá nhân bằng SQL và mã hóa, giải mã tệp tin bằng AES-256.</p>
+          </article>
+
+          <aside class="sticky-note reveal" aria-labelledby="act-title">
+            <h3 id="act-title">Hoạt động &amp; khóa học</h3>
+            <ul class="check-list">
+              <li>Dự án: AES-256 File Encryptor</li>
+              <li>Dự án: Sorting Visualizer</li>
+              <li>Dự án: Hệ thống quản lý chi tiêu cá nhân</li>
+              <li class="muted">Câu lạc bộ, cuộc thi, thực tập: Chưa có</li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+
+      <!-- ===== DỰ ÁN: DANH SÁCH + KHUNG XEM ===== -->
+      <section class="section projects" id="projects" aria-labelledby="projects-title">
+        <header class="section-head">
+          <span class="num">06</span>
+          <h2 class="section-title" id="projects-title">Dự án <span class="hl">cá nhân</span></h2>
+        </header>
+        <p class="section-sub">Ba dự án tôi đã thực hiện: bảo mật, thuật toán và cơ sở dữ liệu. Chọn một dự án ở danh sách để xem.</p>
+
+        <div class="showcase">
+          <div class="proj-list" role="tablist" aria-label="Danh sách dự án" aria-orientation="vertical">
+            <button class="proj-tab is-active c-yellow" role="tab" id="tab-1" aria-controls="panel-1" aria-selected="true" type="button"><b class="mono">01</b><span>AES-256 File Encryptor<small>Bảo mật</small></span></button>
+            <button class="proj-tab c-pink" role="tab" id="tab-2" aria-controls="panel-2" aria-selected="false" tabindex="-1" type="button"><b class="mono">02</b><span>Sorting Visualizer<small>Thuật toán</small></span></button>
+            <button class="proj-tab c-blue" role="tab" id="tab-3" aria-controls="panel-3" aria-selected="false" tabindex="-1" type="button"><b class="mono">03</b><span>Hệ thống quản lý chi tiêu cá nhân<small>Cơ sở dữ liệu</small></span></button>
+          </div>
+
+          <div class="proj-stage">
+            <article class="proj-panel" role="tabpanel" id="panel-1" aria-labelledby="tab-1">
+              <div class="browser">
+                <div class="browser-bar"><i></i><i></i><i></i><span class="mono">projects/aes-256-file-encryptor</span></div>
+                <button class="zoom-btn" type="button" aria-label="Phóng to ảnh dự án AES-256 File Encryptor"><img src="images/project-aes.jpg" alt="Giao diện dự án AES-256 File Encryptor" width="945" height="820"></button>
+              </div>
+              <div class="proj-info">
+                <h3>AES-256 File Encryptor</h3>
+                <p>Phát triển ứng dụng mã hóa và giải mã tệp tin bằng Python với AES-256 CBC. Sử dụng PBKDF2 để tạo khóa từ mật khẩu, HMAC-SHA256 để kiểm tra tính toàn vẹn dữ liệu và tích hợp AWS S3 để tải lên, tải xuống, quản lý tệp mã hóa.</p>
+                <ul class="sticker-list small" aria-label="Công nghệ sử dụng"><li>Python</li><li>AES-256 CBC</li><li>PBKDF2</li><li>HMAC-SHA256</li><li>AWS S3</li><li>Bootstrap</li></ul>
+              </div>
+            </article>
+
+            <article class="proj-panel" role="tabpanel" id="panel-2" aria-labelledby="tab-2" hidden>
+              <div class="browser">
+                <div class="browser-bar"><i></i><i></i><i></i><span class="mono">projects/sorting-visualizer</span></div>
+                <button class="zoom-btn" type="button" aria-label="Phóng to ảnh dự án Sorting Visualizer"><img src="images/project-sorting.jpg" alt="Tổng quan dự án Sorting Visualizer" width="768" height="596" loading="lazy"></button>
+              </div>
+              <div class="proj-info">
+                <h3>Sorting Visualizer</h3>
+                <p>Trực quan hóa các thuật toán Bubble Sort, Quick Sort và Merge Sort bằng Python và Pygame. Mô phỏng quá trình so sánh, hoán đổi phần tử, hỗ trợ sắp xếp tăng dần hoặc giảm dần và giúp người học hiểu rõ nguyên lý hoạt động của từng thuật toán.</p>
+                <ul class="sticker-list small" aria-label="Công nghệ sử dụng"><li>Python</li><li>Pygame</li><li>Bubble Sort</li><li>Quick Sort</li><li>Merge Sort</li></ul>
+              </div>
+            </article>
+
+            <article class="proj-panel" role="tabpanel" id="panel-3" aria-labelledby="tab-3" hidden>
+              <div class="browser">
+                <div class="browser-bar"><i></i><i></i><i></i><span class="mono">projects/quan-ly-chi-tieu</span></div>
+                <button class="zoom-btn" type="button" aria-label="Phóng to ảnh dự án Hệ thống quản lý chi tiêu cá nhân"><img src="images/project-expense.jpg" alt="Tổng quan dự án Hệ thống quản lý chi tiêu cá nhân" width="1200" height="800" loading="lazy"></button>
+              </div>
+              <div class="proj-info">
+                <h3>Hệ thống quản lý chi tiêu cá nhân</h3>
+                <p>Quản lý thu chi cá nhân bằng SQL, theo dõi giao dịch, ngân sách và ví tiền để phân tích biến động chi tiêu, kiểm soát tài chính và thống kê dòng tiền thông qua các truy vấn dữ liệu.</p>
+                <ul class="sticker-list small" aria-label="Công nghệ sử dụng"><li>SQL</li><li>Database</li><li>ERD</li><li>Data Analysis</li><li>UI/UX</li></ul>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- Điểm sáng tạo: AES-256 Playground -->
+        <section class="playground reveal" id="demo" aria-labelledby="demo-title">
+          <div class="playground-head">
+            <p class="sticker tilt-r mono">thử ngay</p>
+            <h3 id="demo-title">AES-256 Playground</h3>
+            <p>Minh họa nhỏ chạy hoàn toàn trên trình duyệt (AES-256-GCM + PBKDF2 qua Web Crypto). Dữ liệu không được gửi đi đâu cả.</p>
+          </div>
+          <div class="playground-grid">
+            <div class="field">
+              <label for="demo-text">Văn bản gốc</label>
+              <textarea id="demo-text" rows="4" placeholder="Nhập nội dung cần mã hóa...">Xin chào, mình là Thùy Dung!</textarea>
+            </div>
+            <div class="field">
+              <label for="demo-cipher">Bản mã (Base64)</label>
+              <textarea id="demo-cipher" class="mono" rows="4" placeholder="Kết quả mã hóa sẽ hiện ở đây..."></textarea>
+            </div>
+          </div>
+          <div class="playground-actions">
+            <div class="field grow">
+              <label for="demo-pass">Mật khẩu</label>
+              <input type="text" id="demo-pass" value="matkhau-demo" autocomplete="off" spellcheck="false">
+            </div>
+            <button class="btn btn-yellow" type="button" id="btn-encrypt">Mã hóa</button>
+            <button class="btn btn-white" type="button" id="btn-decrypt">Giải mã</button>
+          </div>
+          <p class="status mono" id="demo-status" role="status" aria-live="polite"></p>
+        </section>
+      </section>
+
+      <!-- ===== CHỨNG CHỈ / GIẢI THƯỞNG / SỞ THÍCH: VÉ ===== -->
+      <section class="section certificates" id="certificates" aria-labelledby="cert-title">
+        <header class="section-head">
+          <span class="num">07</span>
+          <h2 class="section-title" id="cert-title">Chứng chỉ &amp; <span class="hl">sở thích</span></h2>
+        </header>
+        <p class="section-sub">Hiện chưa có giải thưởng. Tôi đang tập trung tích lũy qua các dự án thực tế.</p>
+
+        <div class="tickets">
+          <article class="ticket reveal">
+            <header class="c-yellow"><h3>Chứng chỉ</h3><span class="mono">MOS</span></header>
+            <ul class="plain-list">
+              <li><span>Microsoft Word 2016</span><em>MOS 2016</em></li>
+              <li><span>Microsoft Excel 2016</span><em>MOS 2016</em></li>
+              <li><span>Microsoft PowerPoint 2016</span><em>MOS 2016</em></li>
+            </ul>
+          </article>
+          <article class="ticket reveal">
+            <header class="c-pink"><h3>Giải thưởng</h3><span class="mono">—</span></header>
+            <ul class="plain-list"><li><span>Giải thưởng</span><em>Chưa có</em></li></ul>
+          </article>
+          <article class="ticket reveal">
+            <header class="c-blue"><h3>Sở thích cá nhân</h3><span class="mono">♪</span></header>
+            <ul class="plain-list">
+              <li><span>Nghe nhạc</span><em>Yêu thích</em></li>
+              <li><span>Cà phê</span><em>Yêu thích</em></li>
+              <li><span>Chơi game</span><em>Yêu thích</em></li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- ===== LIÊN HỆ + FORM ===== -->
+      <section class="section contact" id="contact" aria-labelledby="contact-title">
+        <header class="section-head">
+          <span class="num">08</span>
+          <h2 class="section-title" id="contact-title">Liên hệ <span class="hl">với tôi</span></h2>
+        </header>
+
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <p class="contact-big">Cùng trò chuyện nhé!</p>
+            <p class="section-sub">Bạn có thể dùng biểu mẫu bên cạnh hoặc liên hệ trực tiếp qua email.</p>
+            <ul class="contact-list">
+              <li><small class="mono">Email</small><a href="mailto:dangngocthuydung9191@gmail.com">dangngocthuydung9191@gmail.com</a></li>
+              <li><small class="mono">Địa điểm</small><strong>TP. Hồ Chí Minh, Việt Nam</strong></li>
+            </ul>
+          </div>
+
+          <form class="notepad reveal" id="contact-form" novalidate>
+            <h3>Gửi lời nhắn</h3>
+            <div class="field">
+              <label for="name">Họ tên <span class="required">*</span></label>
+              <input type="text" id="name" name="name" placeholder="Nhập họ tên của bạn" autocomplete="name">
+              <small class="error" id="error-name"></small>
+            </div>
+            <div class="field">
+              <label for="email">Email <span class="required">*</span></label>
+              <input type="email" id="email" name="email" placeholder="vidu@email.com" autocomplete="email">
+              <small class="error" id="error-email"></small>
+            </div>
+            <div class="field">
+              <label for="message">Nội dung <span class="required">*</span></label>
+              <textarea id="message" name="message" rows="5" placeholder="Viết lời nhắn của bạn..."></textarea>
+              <small class="error" id="error-message"></small>
+            </div>
+            <button type="submit" class="btn btn-yellow btn-block">Gửi lời nhắn</button>
+            <p class="status" id="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+
+      <footer class="site-footer">
+        <p class="footer-big" aria-hidden="true">CẢM ƠN BẠN ĐÃ GHÉ THĂM ✦</p>
+        <div class="footer-row">
+          <p>&copy; <span id="year">2026</span> Đặng Ngọc Thùy Dung. Bảo lưu mọi quyền.</p>
+          <p class="mono">HTML5 · CSS3 · JavaScript thuần</p>
+        </div>
+      </footer>
+    </main>
+  </div>
+
+  <!-- Hộp phóng to ảnh dự án -->
+  <dialog class="lightbox" id="lightbox" aria-labelledby="lightbox-title">
+    <div class="lightbox-inner">
+      <button class="btn-mini lightbox-close" type="button" id="lightbox-close" aria-label="Đóng">&times;</button>
+      <img id="lightbox-img" src="" alt="" width="900" height="600">
+      <p id="lightbox-title" class="mono"></p>
+    </div>
+  </dialog>
+
+  <button class="back-to-top" id="back-to-top" type="button" aria-label="Quay lại đầu trang">&uarr;</button>
+</body>
+</html>
